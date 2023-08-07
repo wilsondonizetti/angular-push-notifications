@@ -27,7 +27,7 @@ import INotificationMessage from './models/INotificationMessage';
   bootstrap: [AppComponent]
 })
 export class AppModule {
-  readonly VAPID_PUBLIC_KEY = "BLjKEyVxw9XVPfhrX1HwuTOeHTcnOf5BacH6w7k7_LTTVnqX6A9S6OOpE27pZTNbcB_mrIRP73WvG_P-8aPRx0A";
+  readonly VAPID_PUBLIC_KEY = "";
 
   constructor(private swPush: SwPush, private update: SwUpdate, private pdvService: PDVService) {
     update.versionUpdates.subscribe(update => {
